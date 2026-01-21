@@ -51,7 +51,7 @@ app.use('/valves', require('./routes/valves'));
 app.use('/assistant', require('./routes/assistant'));
 app.use('/push', pushRoutes);
 
-const PORT = process.env.PORT || 10000;
+const PORT = process.env.PORT;
 server.listen(PORT, () =>
   console.log(`Server running on port ${PORT}`)
 );
